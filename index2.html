@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="main2.css">
+
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <label for="productNameInput"> productName :</label>
+    <input type="text" class="form-control mb-3" placeholder="Name" id="productNameInput">
+    <div class="alert alert-danger p-2 my-3 d-none" id="nameAlert">product name should be ,,,</div>
+    <label for="productPriceInput"> productPrice :</label>
+    <input type="text" class="form-control mb-3" placeholder="Price" id="productPriceInput">
+    <div class="alert alert-danger p-2 my-3 d-none" id="priceAlert">product price should be ,,,</div>
+    <label for="productCategoryInput"> productCategory :</label>
+    <input type="text" class="form-control mb-3" placeholder="Category" id="productCategoryInput">
+    <div class="alert alert-danger p-2 my-3 d-none" id="categoryAlert">product category should be ,,,</div>
+    <label for="productDescInput"> productDesc :</label>
+    <textarea class="form-control mb-3" placeholder="Descrption" id="productDescInput"></textarea>
+    <div class="alert alert-danger p-2 my-3 d-none" id="descAlert">product Descrption should be ,,,</div>
+
+    <button class="btn btn-info disabled" id="productbutton">Add Product</button>
+    <input type="text" class="form-control mt-5 m-auto w-75" placeholder="Search" id="searchProduct">
+
+  </div>
+
+
+  <div style="overflow-x: auto;" class="container   mt-5">
+    <table class="table text-center">
+      <thead>
+        <th>index</th>
+        <th>Name</th>
+        <th>price</th>
+        <th>category</th>
+        <th>Descrption</th>
+        <th>Delete</th>
+        <th>Update</th>
+      </thead>
+
+      <tbody id="tbodyProduct">
+
+
+      </tbody>
+
+    </table>
+  </div>
+
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main2.js"></script>
+</body>
+
+</html>
